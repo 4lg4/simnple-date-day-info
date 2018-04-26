@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Test</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="screen.css">
+    </head>
+    <body>
+        <form>
+
+            <div class="tabs">
+                <div class="tabs-controller">
+                    <div>Day of the week</div>
+                    <div>Date picker</div>
+                    <div>User input</div>
+                </div>
+
+                <div class="tabs-content">
+                    <div class="tab" id="days-of-the-week">
+                        <input name="dow" type="checkbox" value="MON"> Monday
+                        <input name="dow" type="checkbox" value="TUE"> Tuesday
+                        <input name="dow" type="checkbox" value="WED"> Wednesday
+                        <input name="dow" type="checkbox" value="THU"> Thursday
+                        <input name="dow" type="checkbox" value="FRI"> Friday
+                        <input name="dow" type="checkbox" value="SAT"> Saturday
+                        <input name="dow" type="checkbox" value="SUN"> Sunday
+                    </div>
+
+                    <div class="tab" id="date-picker">
+                        <input type="hidden" value="" id="date">
+                        <select id="day"></select>
+                        <select id="month"></select>
+                        <select id="year"></select>
+                    </div>
+
+                    <div class="tab" id="user-input">
+                        <!-- parse it to fields above -->
+                        <input type="text" value="" id="input">
+                    </div>
+
+                </div>
+            </div>
+
+            <input type="submit" value="Run" id="submit">
+
+            <!-- final format: MON,TUE,FRI or 05/12/2011 -->
+            <input type="text" value="" id="result" placeholder="Result">
+
+        </form>
+
+        <script src="main.js" type="text/javascript" charset="utf-8"></script>
+    </body>
+</html>

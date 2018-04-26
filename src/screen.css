@@ -1,0 +1,37 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.tabs-content .tab {
+    display: none;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.tabs {
+    width: 100%;
+}
+
+.tabs-controller {
+    width: 100%;
+}
+
+.tabs-controller div {
+    display: inline-block;
+    cursor: pointer;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.tabs-controller div.active {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.tabs-controller div:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+
+.tabs-controller div:hover.active {
+    background-color: rgba(0,0,0,0.1);
+}
+
